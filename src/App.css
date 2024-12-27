@@ -1,8 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%; /* Ocupa todo el ancho */
+  height: 100%; /* Ocupa todo el alto */
+  margin: 0;
+  padding: 0; /* Elimina el espacio adicional */
+  box-sizing: border-box; /* Garantiza que el padding no afecte las dimensiones */
+  background-color: #eee8e2;
+}
+
+/* .container {
+  max-width: 1280px; /* Mantén el límite en pantallas grandes */ /* 
+  margin: 0 auto; /* Centra el contenido */ /* 
   padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -40,3 +53,4 @@
 .read-the-docs {
   color: #888;
 }
+ */
