@@ -5,29 +5,27 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-section">
+        <div className="footer-section redes-sociales">
           <h3>VIVEROS CHIÑIGÜE</h3>
           <p>¡Síguenos en redes sociales!</p>
           <div className="social-icons">
             <a
               href="https://www.facebook.com/viveroschinigue"
               aria-label="Facebook"
-              className="icon facebook"
+              className="social-icons-facebook"
             >
-              F
-              <img src="" alt="" />
+              <img src="src/assets/facebook-icon.svg" alt="" />
             </a>
             <a
               href="https://www.instagram.com/viveros_chinigue/"
               aria-label="Instagram"
-              className="icon instagram"
+              className="social-icons-instagram"
             >
-              I
-              <img src="" alt="" />
+              <img src="src/assets/instagram-icon.svg" alt="" />
             </a>
           </div>
         </div>
-        <div className="footer-section">
+        <div className="footer-section paginas">
           <h4>Páginas</h4>
           <ul>
             <li>
@@ -44,7 +42,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="footer-section">
+        <div className="footer-section contacto">
           <h4>Contáctanos</h4>
           <li>
             <a href="mailto:ventas@viveroschinigue.cl">
@@ -58,7 +56,7 @@ const Footer = () => {
             <a href="tel:+56956794019">+56 9 5679 4019</a>
           </li>
         </div>
-        <div className="footer-section">
+        <div className="footer-section visitanos">
           <h4>Visítanos</h4>
           <p>
             Pleno corazón de Chiñigüe, sector El Cristo, antes del Club de
@@ -69,7 +67,20 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Desarrollador por Estefany Rodríguez y Marcelo Gallardo</p>
+        <p>
+          Desarrollado por{" "}
+          <span>
+            <a href="https://www.linkedin.com/in/estefany-rodriguez-perez/">
+              Estefany Rodríguez
+            </a>
+          </span>{" "}
+          y{" "}
+          <span>
+            <a href="https://www.linkedin.com/in/marcelo-gallardo-droguett-08876117a/">
+              Marcelo Gallardo
+            </a>
+          </span>
+        </p>
       </div>
     </footer>
   );

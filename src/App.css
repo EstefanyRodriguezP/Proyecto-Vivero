@@ -7,8 +7,8 @@
   width: 100%; /* Ocupa todo el ancho */
   height: 100%; /* Ocupa todo el alto */
   margin: 0;
-  padding: 0; /* Elimina el espacio adicional */
-  box-sizing: border-box; /* Garantiza que el padding no afecte las dimensiones */
+  padding: 0;
+  box-sizing: border-box;
   background-color: #eee8e2;
 }
 

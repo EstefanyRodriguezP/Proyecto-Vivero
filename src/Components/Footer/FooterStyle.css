@@ -16,12 +16,29 @@
 .footer-section {
   flex: 1;
   min-width: 200px;
-  padding: 20px 50px 0 50px;
+  padding: 20px 30px 0 30px;
 }
 
-.footer-section h3,
+.footer-section.redes-sociales {
+  text-align: center;
+  width: 375px;
+  max-width: 375px;
+}
+
+.footer-section.paginas,
+.footer-section.contacto {
+  width: 220px;
+  max-width: 220px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
 .footer-section h4 {
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .footer-section li {
@@ -42,6 +59,8 @@
 
 .social-icons {
   display: flex;
+  justify-content: center;
+  padding: 10px;
   gap: 10px;
 }
 
@@ -51,6 +70,16 @@
   height: 24px;
   background-color: #b3be94;
   border-radius: 50%;
+}
+
+.social-icons-facebook img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icons-instagram img {
+  width: 20px;
+  height: 20px;
 }
 
 .icon.facebook {
@@ -72,4 +101,17 @@
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-bottom a {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(8, 61, 12);
+}
+
+.footer-bottom span,
+a:hover {
+  color: rgb(225, 234, 225);
 }

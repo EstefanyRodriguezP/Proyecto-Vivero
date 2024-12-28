@@ -34,41 +34,45 @@ const Navbar = () => {
         {/* Logo */}
         <div className="logo">
           <img
-            src="src/assets/logo.jpg" // Cambia esta ruta por la de tu logo
+            src="src/assets/vivero-logo.png" // Cambia esta ruta por la de tu logo
             alt="Logo"
             className="logo-image"
           />
         </div>
 
         {/* Links de Navegación */}
-        <ul className={`nav-links ${isSearchActive ? "search-active" : ""}`}>
-          <li>
-            <a href="#">Inicio</a>
-          </li>
-          <li
-            className="dropdown"
-            onMouseOver={() => toggleDropdown(true)}
-            onMouseOut={() => toggleDropdown(false)}
-            onClick={() => toggleDropdown(!isDropdownOpen)}
-          >
-            <a href="#">Nuestras Plantas</a>
-            <div className={`dropdown-menu ${isDropdownOpen ? "visible" : ""}`}>
-              <ul>
-                <li>Herbáceas</li>
-                <li>Arbustos</li>
-                <li>Árboles</li>
-                <li>Gramíneas</li>
-                <li>Geófitas: Flores de bulbo y rizoma</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">Noticias</a>
-          </li>
-          <li>
-            <a href="#">Contacto</a>
-          </li>
-        </ul>
+        <div className="nav-options">
+          <ul className={`nav-links ${isSearchActive ? "search-active" : ""}`}>
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li
+              className="dropdown"
+              onMouseOver={() => toggleDropdown(true)}
+              onMouseOut={() => toggleDropdown(false)}
+              onClick={() => toggleDropdown(!isDropdownOpen)}
+            >
+              <a href="#">Nuestras Plantas</a>
+              <div
+                className={`dropdown-menu ${isDropdownOpen ? "visible" : ""}`}
+              >
+                <ul>
+                  <li>Herbáceas</li>
+                  <li>Arbustos</li>
+                  <li>Árboles</li>
+                  <li>Gramíneas</li>
+                  <li>Geófitas: Flores de bulbo y rizoma</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Noticias</a>
+            </li>
+            <li>
+              <a href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
 
         {/* Barra de Búsqueda */}
         <div className={`search-container ${isSearchActive ? "active" : ""}`}>

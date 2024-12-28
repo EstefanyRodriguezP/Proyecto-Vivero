@@ -42,11 +42,12 @@
   font-size: 16px;
   background-color: #bd8f71;
   color: #fff;
-  border: none;
+  border: 3px solid #f7ece4;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .banner-button:hover {
   background-color: #5e361b;
+  border: 3px solid #fff;
 }
