@@ -1,0 +1,29 @@
+.categorias-container {
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
+  max-height: 400px; /* Ajusta la altura según sea necesario */
+  margin-right: 80px;
+}
+
+.categorias {
+  text-align: left;
+}
+
+.categorias h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.categorias ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.categorias li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.categorias li.selected {
+  text-decoration: underline; /* Subraya la categoría seleccionada */
+}

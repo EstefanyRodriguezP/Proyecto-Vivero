@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import "./Categoria.css";
 
 const Categorias = () => {
+  const [selectedCategoria, setSelectedCategoria] = useState(null);
+
   const categorias = [
     { nombre: "Flores de bulbo y Rizoma", cantidad: 7 },
     { nombre: "Herbáceas mediterráneas", cantidad: 6 },
@@ -8,16 +11,28 @@ const Categorias = () => {
     { nombre: "Otras Herbáceas", cantidad: 4 },
   ];
 
+  const handleCategoriaClick = (categoria) => {
+    setSelectedCategoria(categoria.nombre);
+  };
+
   return (
-    <div>
-      <h2>Categorías</h2>
-      <ul>
-        {categorias.map((categoria, index) => (
-          <li key={index}>
-            {categoria.nombre} ({categoria.cantidad})
-          </li>
-        ))}
-      </ul>
+    <div className="categorias-container">
+      <div className="categorias">
+        <h2>Categorías</h2>
+        <ul>
+          {categorias.map((categoria, index) => (
+            <li
+              key={index}
+              onClick={() => handleCategoriaClick(categoria)}
+              className={
+                selectedCategoria === categoria.nombre ? "selected" : ""
+              }
+            >
+              {categoria.nombre} ({categoria.cantidad})
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

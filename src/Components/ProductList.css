@@ -1,0 +1,31 @@
+.product-list {
+  width: 70%;
+}
+
+.product-list h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product-card.selected {
+  text-decoration: underline; /* Subraya la tarjeta de producto seleccionada */
+}
+
+.product-image {
+  width: 180px;
+  height: 180px;
+  background-color: #f0f0f0;
+}

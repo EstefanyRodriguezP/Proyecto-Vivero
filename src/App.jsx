@@ -6,6 +6,10 @@ import Pagination from "./Components/Pagination";
 import ProductList from "./Components/ProductList";
 import Categoria from "./Components/Categoria";
 import Popup from "./Components/Popup";
+import Formulario from "./Components/Formulario"; // Importa el componente de formulario
+import MapContainer from "./Components/MapContainer"; // Importa el componente de mapa
+import ContactInfo from "./Components/ContactInfo"; // Importa el componente de información de contacto
+import PlantDescription from "./Components/PlantDescription"; // Importa el componente de descripción de la planta
 
 function App() {
   const [count, setCount] = useState(0);
@@ -45,11 +49,10 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <Popup /> {/* Añadir el componente de pop-up */}
+      <Popup />
       <div className="content">
-        <Categoria />{" "}
-        {/* Asegúrate de que el componente Categoria esté correctamente importado y escrito */}
-        <div>
+        <Categoria />
+        <div className="products-section">
           <ProductList products={products} />
           <Pagination
             currentPage={currentPage}
@@ -58,6 +61,10 @@ function App() {
           />
         </div>
       </div>
+      <Formulario /> {/* Añade el formulario aquí */}
+      <MapContainer /> {/* Añade el mapa aquí */}
+      <ContactInfo /> {/* Añade la información de contacto aquí */}
+      <PlantDescription /> {/* Añade la descripción de la planta aquí */}
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>

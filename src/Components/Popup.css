@@ -15,7 +15,8 @@
   padding: 20px;
   border-radius: 10px;
   position: relative;
-  width: 300px; /* Ajusta el ancho según sea necesario */
+  width: 600px; /* Ajusta el ancho según sea necesario */
+  height: 800px;
   display: flex;
   flex-direction: column;
 }
@@ -39,24 +40,24 @@
 
 .popup-text {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .popup-text h2 {
   margin-top: 0;
-  font-size: 24px;
+  font-size: 60px;
   color: #333;
 }
 
 .popup-text h3 {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 40px;
   color: #555;
 }
 
 .popup-text p {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 30px;
   color: #777;
 }
 
@@ -69,6 +70,6 @@
 
 .popup-image img {
   width: 200px; /* Ajusta el tamaño según sea necesario */
-  height: 300px;
+  height: 800px;
   border-radius: 10px;
 }
