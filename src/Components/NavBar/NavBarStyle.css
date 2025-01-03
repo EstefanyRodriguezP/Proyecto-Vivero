@@ -1,6 +1,7 @@
 /* Navbar General */
 .navbar {
   width: 100%;
+  max-width: 100%;
   background-color: #c7d5a6;
   position: relative;
   z-index: 10;
@@ -11,7 +12,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  /* padding: 15px 30px; */
+  /* padding: 15px; */
 }
 
 .nav-options {
@@ -33,7 +35,7 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 50px;
   margin: 0;
 }
 
@@ -150,7 +152,7 @@
 .search-container.active .search-input {
   display: block;
   width: 200px;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   border: 1px solid #ccc;
   border-radius: 0.25rem;
 }
@@ -174,9 +176,9 @@
 }
 
 /* Vista Responsiva */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .search-icon {
-    display: none; /* Oculta el ícono de búsqueda */
+    display: none; /* Oculta el ícono de búsqueda 
   }
 
   .search-container {
@@ -268,3 +270,4 @@
     background-color: rgba(0, 123, 255, 0.1);
   }
 }
+ */

@@ -5,7 +5,7 @@ import fotobanner from "/src/assets/fotobanner.jpg";
 function Home() {
   return (
     <>
-      <div>
+      <div className="banner">
         <Banner
           backgroundImage={fotobanner}
           title="BIENVENIDO A VIVEROS CHIÑIGÜE"
