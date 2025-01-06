@@ -33,18 +33,20 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <div className="logo">
-          <img
-            src="src/assets/vivero-logo.png" // Cambia esta ruta por la de tu logo
-            alt="Logo"
-            className="logo-image"
-          />
+          <a href="/">
+            <img
+              src="src/assets/vivero-logo.png" // Cambia esta ruta por la de tu logo
+              alt="Logo"
+              className="logo-image"
+            />
+          </a>
         </div>
 
         {/* Links de Navegación */}
         <div className="nav-options">
           <ul className={`nav-links ${isSearchActive ? "search-active" : ""}`}>
             <li>
-              <a href="#">Inicio</a>
+              <a href="/">Inicio</a>
             </li>
             <li
               className="dropdown"
@@ -66,7 +68,7 @@ const Navbar = () => {
               </div>
             </li>
             <li>
-              <a href="#">Noticias</a>
+              <a href="/noticias">Noticias</a>
             </li>
             <li>
               <a href="#">Contacto</a>

@@ -11,7 +11,7 @@ function Noticias() {
           title="NUESTRAS NOTICIAS"
           subtitle="Detrás de cada planta, hay una historia de pasión y crecimiento.
                 Descubre cómo nuestro vivero nació del amor por la naturaleza y el compromiso con un futuro más verde."
-          buttonText="Ver catálogo"
+          buttonText=""
           onButtonClick={() => console.log("Botón clickeado")}
         />
       </div>

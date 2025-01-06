@@ -15,3 +15,16 @@
   box-sizing: border-box;
   background-color: #eee8e2; /* Fondo claro para el contenedor */
 }
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.products-section {
+  flex: 1;
+}
+
+html {
+  scroll-behavior: smooth; /* Habilita el deslizamiento suave en toda la página */
+}
